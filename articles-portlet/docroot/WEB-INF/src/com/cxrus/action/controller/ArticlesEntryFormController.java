@@ -20,7 +20,7 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
 @RequestMapping("VIEW")
 public class ArticlesEntryFormController {
 
-//	private static Log log = LogFactoryUtil.getLog(MainPageController.class);
+	private static Log log = LogFactoryUtil.getLog(MainPageController.class);
 
 	/**
 	 * Render landing page. The controller prepare for the all available task
@@ -32,6 +32,9 @@ public class ArticlesEntryFormController {
 	public String renderDefaultListRequest(RenderRequest request,
 			RenderResponse response, Model model) throws WindowStateException,
 			SystemException {
+		
+		log.info("======== default controller =========");
+		
 		return "articles-entryform/view";
 	}
 }

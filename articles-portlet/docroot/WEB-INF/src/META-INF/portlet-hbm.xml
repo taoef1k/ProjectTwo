@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.cxrus.model.Articles" />
+	<import class="com.cxrus.model.CategoryArticles" />
+	<class name="com.cxrus.model.impl.ArticlesImpl" table="AR_Articles">
+		<cache usage="read-write" />
+		<id name="articlesId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="articleName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="articleTitle" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="publishedDate" type="org.hibernate.type.TimestampType" />
+		<property name="categoryArticlesId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="com.cxrus.model.impl.CategoryArticlesImpl" table="AR_CategoryArticles">
+		<cache usage="read-write" />
+		<id name="categoryArticlesId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="categoryName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="com.cxrus.service.ArticlesLocalService" class="com.cxrus.service.impl.ArticlesLocalServiceImpl" />
+	<bean id="com.cxrus.service.ArticlesService" class="com.cxrus.service.impl.ArticlesServiceImpl" />
+	<bean id="com.cxrus.service.persistence.ArticlesPersistence" class="com.cxrus.service.persistence.ArticlesPersistenceImpl" parent="basePersistence" />
+	<bean id="com.cxrus.service.CategoryArticlesLocalService" class="com.cxrus.service.impl.CategoryArticlesLocalServiceImpl" />
+	<bean id="com.cxrus.service.CategoryArticlesService" class="com.cxrus.service.impl.CategoryArticlesServiceImpl" />
+	<bean id="com.cxrus.service.persistence.CategoryArticlesPersistence" class="com.cxrus.service.persistence.CategoryArticlesPersistenceImpl" parent="basePersistence" />
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<custom-sql>
+	<sql id="com.nets.poc.service.persistence.MerchantRegistrationFinder.FIND_USER_ORDER_BY_NAME">
+		<![CDATA[			
+			select userId,screenName,emailAddress,firstName,lastName from User_ Order BY firstName ASC							
+		]]>
+	</sql>	
+	<sql id="com.nets.poc.service.persistence.MerchantRegistrationFinder.FIND_ENGINEERS">
+		<![CDATA[			
+			SELECT User_.userId,User_.screenName FROM User_ INNER JOIN Users_UserGroups ON (Users_UserGroups.userId = User_.userId) WHERE (Users_UserGroups.userGroupId = ?) ORDER BY firstName ASC			
+							
+		]]>
+	</sql>		
+</custom-sql>

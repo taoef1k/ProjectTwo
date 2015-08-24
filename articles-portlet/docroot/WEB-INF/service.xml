@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="com.cxrus">
+	<author>mohdtaufik</author>
+	<namespace>AR</namespace>
+	<entity name="Articles" local-service="true" uuid="true">
+
+		<!-- PK fields -->
+
+		<column name="articlesId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+        <column name="articleName" type="String"></column>
+        <column name="articleTitle" type="String"></column>
+        <column name="publishedDate" type="Date"></column>
+        <column name="categoryArticlesId" type="long"></column>
+	</entity>
+	<entity name="CategoryArticles" local-service="true">
+
+		<!-- PK fields -->
+
+		<column name="categoryArticlesId" type="long" primary="true"></column>
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long"></column>
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long"></column>
+		<column name="userId" type="long"></column>
+		<column name="userName" type="String"></column>
+		<column name="createDate" type="Date"></column>
+		<column name="modifiedDate" type="Date"></column>
+        <column name="categoryName" type="String"></column>
+	</entity>
+	<exceptions>
+        <exception>ArticleName</exception>
+    </exceptions>
+</service-builder>

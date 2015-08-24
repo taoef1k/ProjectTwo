@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.cxrus.model.Articles">
+		<field name="uuid" type="String" />
+		<field name="articlesId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="articleName" type="String" />
+		<field name="articleTitle" type="String" />
+		<field name="publishedDate" type="Date" />
+		<field name="categoryArticlesId" type="long" />
+	</model>
+	<model name="com.cxrus.model.CategoryArticles">
+		<field name="categoryArticlesId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="categoryName" type="String" />
+	</model>
+</model-hints>

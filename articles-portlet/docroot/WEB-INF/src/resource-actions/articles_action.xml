@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<resource-action-mapping>		
+	<portlet-resource>
+		<portlet-name>nets-eftpos</portlet-name>
+		<permissions>
+			<supports>				
+				<action-key>CONFIGURATION</action-key>
+				<action-key>VIEW</action-key>			
+			</supports>
+			<community-defaults>
+				<action-key>VIEW</action-key>
+			</community-defaults>
+			<guest-defaults>
+				<action-key>VIEW</action-key>
+			</guest-defaults>
+			<guest-unsupported>				
+				<action-key>CONFIGURATION</action-key>
+			</guest-unsupported>
+		</permissions>
+	</portlet-resource>	
+	<model-resource>
+		<model-name>com.nets.poc</model-name>
+		<portlet-ref>
+			<portlet-name>nets-main-list</portlet-name>
+		</portlet-ref>
+		<supports>
+			<!-- Merchant registration button -->
+			<action-key>BTN_ADD_NEW_MERCHANT</action-key>
+			<action-key>BTN_SAVE_DRAFT_MERCHANT</action-key>
+			<action-key>BTN_UPLOAD_FILE_MERCHANT</action-key>
+			<action-key>BTN_SUBMIT_MERCHANT</action-key>	
+			<action-key>BTN_VERIFY_MERCHANT</action-key>
+			<action-key>BTN_APPROVAL_MERCHANT</action-key>
+			
+			<!-- Merchant registration TAB -->
+			<action-key>APPLICATION_MERCHANT</action-key>
+			<action-key>MERCHANT_NAME</action-key>
+			<action-key>BUSSINESS_INFO</action-key>
+			<action-key>BILLING_ADDRESS</action-key>
+			<action-key>ACCOUNT_INFO</action-key>	
+			<action-key>MERCHANT_CONNECT</action-key>
+			<action-key>TERMINAL</action-key>
+			<action-key>OUTLET</action-key>
+			<action-key>RECEIPT_MERCHANT</action-key>
+			<action-key>PAYMENT</action-key>
+			<action-key>UPLOAD_MERCHANT</action-key>
+			<action-key>NETS_INTERNAL</action-key>
+			<action-key>PROCESSING_DETAIL</action-key>
+			<action-key>REMARKS</action-key>
+			<action-key>FINANCE</action-key>
+			<action-key>READ_ONLY_MERCHANT</action-key>
+			
+			<!-- Work Order Form Button -->
+			<action-key>BTN_ADD_NEW_WO</action-key>
+			<action-key>BTN_SAVE_DRAFT_WO</action-key>
+			<action-key>BTN_UPLOAD_FILE_WO</action-key>
+			<action-key>BTN_SUBMIT_WO</action-key>	
+			
+			<!-- Work Order Tab -->
+			<action-key>APP_DETAIL_WO</action-key>
+			<action-key>RECEIPT_WO</action-key>
+			<action-key>UPLOAD_WO</action-key>
+			<action-key>STATUS_WO</action-key>
+			<action-key>READ_ONLY_WO</action-key>
+			
+			<!-- Merchant Registration Application Tab -->
+			<action-key>MERCHANT_NETS_PRODUCT</action-key>
+			<action-key>MERCHANT_VALUE_ADDED_SERVICE</action-key>
+			
+			<!-- Merchant Name Tab-->
+			<action-key>MERCHANT_COMPANY_NAME</action-key>
+			<action-key>MERCHANT_STALL_OWNER</action-key>
+			<action-key>MERCHANT_TRADING_NAME</action-key>
+			
+			<!-- Bussiness Information -->
+			<action-key>MERCHANT_TYPE_OF_BUSSINESS</action-key>
+			<action-key>MERCHANT_BUSSINESS_ACTIVITY</action-key>
+			<action-key>MERCHANT_DATE_INCORPORATE</action-key>
+			<action-key>MERCHANT_BUSSINESS_REG_NO</action-key>
+			<action-key>MERCHANT_GST_REG_NO</action-key>
+			<action-key>MERCHANT_PLACE_INC</action-key>
+			
+				
+			<!-- Work Order App Detail -->
+			<action-key>WO_APP_WO_NUMBER</action-key>
+			<action-key>WO_APP_APPOINTMENT_DATE</action-key>
+			<action-key>WO_APP_RETAILER_NAME</action-key>
+			<action-key>WO_APP_TRADING_NAME</action-key>
+			<action-key>WO_APP_OUTLET_ADDRESS</action-key>
+			<action-key>WO_APP_DEPARTMENT</action-key>
+			<action-key>WO_APP_JOB_ADDRESS</action-key>
+			<action-key>WO_APP_MERCHANT_ID</action-key>
+			<action-key>WO_APP_JOB_DESCRIPTION</action-key>
+			<action-key>WO_APP_REMARKS</action-key>
+			<action-key>WO_APP_REQUEST_BY</action-key>
+			<action-key>WO_APP_TERMINAL_READ_ONLY</action-key>
+		</supports>
+		<community-defaults />
+		<guest-defaults />			
+		<guest-unsupported>
+				<!-- Merchant registration button -->
+			<action-key>BTN_ADD_NEW_MERCHANT</action-key>
+			<action-key>BTN_SAVE_DRAFT_MERCHANT</action-key>
+			<action-key>BTN_UPLOAD_FILE_MERCHANT</action-key>
+			<action-key>BTN_SUBMIT_MERCHANT</action-key>	
+			<action-key>BTN_VERIFY_MERCHANT</action-key>
+			<action-key>BTN_APPROVAL_MERCHANT</action-key>
+			
+			<!-- Merchant registration TAB -->
+			<action-key>APPLICATION_MERCHANT</action-key>
+			<action-key>MERCHANT_NAME</action-key>
+			<action-key>BUSSINESS_INFO</action-key>
+			<action-key>BILLING_ADDRESS</action-key>
+			<action-key>ACCOUNT_INFO</action-key>	
+			<action-key>MERCHANT_CONNECT</action-key>
+			<action-key>TERMINAL</action-key>
+			<action-key>OUTLET</action-key>
+			<action-key>RECEIPT_MERCHANT</action-key>
+			<action-key>PAYMENT</action-key>
+			<action-key>UPLOAD_MERCHANT</action-key>
+			<action-key>NETS_INTERNAL</action-key>
+			<action-key>PROCESSING_DETAIL</action-key>
+			<action-key>REMARKS</action-key>
+			<action-key>FINANCE</action-key>
+			<action-key>READ_ONLY_MERCHANT</action-key>
+			
+			<!-- Work Order Form Button -->
+			<action-key>BTN_ADD_NEW_WO</action-key>
+			<action-key>BTN_SAVE_DRAFT_WO</action-key>
+			<action-key>BTN_UPLOAD_FILE_WO</action-key>
+			<action-key>BTN_SUBMIT_WO</action-key>	
+			
+			<!-- Work Order Tab -->
+			<action-key>APP_DETAIL_WO</action-key>
+			<action-key>RECEIPT_WO</action-key>
+			<action-key>UPLOAD_WO</action-key>
+			<action-key>STATUS_WO</action-key>
+			<action-key>READ_ONLY_WO</action-key>
+			
+			<!-- Merchant Registration Application Tab -->
+			<action-key>MERCHANT_NETS_PRODUCT</action-key>
+			<action-key>MERCHANT_VALUE_ADDED_SERVICE</action-key>
+			
+			<!-- Merchant Name Tab-->
+			<action-key>MERCHANT_COMPANY_NAME</action-key>
+			<action-key>MERCHANT_STALL_OWNER</action-key>
+			<action-key>MERCHANT_TRADING_NAME</action-key>
+			
+			<!-- Bussiness Information -->
+			<action-key>MERCHANT_TYPE_OF_BUSSINESS</action-key>
+			<action-key>MERCHANT_BUSSINESS_ACTIVITY</action-key>
+			<action-key>MERCHANT_DATE_INCORPORATE</action-key>
+			<action-key>MERCHANT_BUSSINESS_REG_NO</action-key>
+			<action-key>MERCHANT_GST_REG_NO</action-key>
+			<action-key>MERCHANT_PLACE_INC</action-key>
+			
+			
+			<!-- Work Order App Detail -->
+			<action-key>WO_APP_WO_NUMBER</action-key>
+			<action-key>WO_APP_APPOINTMENT_DATE</action-key>
+			<action-key>WO_APP_RETAILER_NAME</action-key>
+			<action-key>WO_APP_TRADING_NAME</action-key>
+			<action-key>WO_APP_OUTLET_ADDRESS</action-key>
+			<action-key>WO_APP_DEPARTMENT</action-key>
+			<action-key>WO_APP_JOB_ADDRESS</action-key>
+			<action-key>WO_APP_MERCHANT_ID</action-key>
+			<action-key>WO_APP_JOB_DESCRIPTION</action-key>
+			<action-key>WO_APP_REMARKS</action-key>
+			<action-key>WO_APP_REQUEST_BY</action-key>
+			<action-key>WO_APP_TERMINAL_READ_ONLY</action-key>
+			
+			<!-- Set Remark to Read Only -->
+			<action-key>MERCHANT_REMARK_READ_ONLY</action-key>
+			
+		</guest-unsupported>
+	</model-resource>	
+</resource-action-mapping>

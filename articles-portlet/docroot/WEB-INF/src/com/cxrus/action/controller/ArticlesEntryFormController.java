@@ -20,7 +20,7 @@ import org.springframework.web.portlet.bind.annotation.RenderMapping;
 @RequestMapping("VIEW")
 public class ArticlesEntryFormController {
 
-	private static Log log = LogFactoryUtil.getLog(MainPageController.class);
+//	private static Log log = LogFactoryUtil.getLog(MainPageController.class);
 
 	/**
 	 * Render landing page. The controller prepare for the all available task
